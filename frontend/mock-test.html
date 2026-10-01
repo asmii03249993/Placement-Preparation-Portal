@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mock Test</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>
+            Placement Preparation Portal
+        </h1>
+
+        <p>
+            Mock Test
+        </p>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+        <h2>
+            📝 Placement Mock Test
+        </h2>
+
+        <p class="instruction">
+            Select a category and start your mock test.
+        </p>
+
+
+        <!-- Mock Test Categories -->
+
+        <div class="category-container">
+
+            <button
+                onclick="startMockTest('Java')">
+
+                Java Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('Python')">
+
+                Python Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('C Programming')">
+
+                C Programming Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('C++')">
+
+                C++ Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('DBMS')">
+
+                DBMS Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('Operating System')">
+
+                Operating System Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('Computer Networks')">
+
+                Computer Networks Mock Test
+
+            </button>
+
+
+            <button
+                onclick="startMockTest('Data Structures')">
+
+                Data Structures Mock Test
+
+            </button>
+
+        </div>
+
+
+        <!-- Back Button -->
+
+        <div style="
+            text-align: center;
+            margin-top: 30px;
+        ">
+
+            <button
+                class="next-btn"
+                onclick="location.href='index.html'">
+
+                🏠 Back to Home
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function startMockTest(category) {
+
+            console.log(
+                "Starting Mock Test:",
+                category
+            );
+
+
+            window.location.href =
+                "mock-questions.html?category=" +
+                encodeURIComponent(category);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
